@@ -13,12 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        // 1️⃣ Load default fragment (PLANTS)
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.title = "Discovery"
+
         if (savedInstanceState == null) {
             loadFragment(PlantsFragment())
         }
 
-        // 2️⃣ Tab selection listener
+
         binding.tlMain.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
 
             override fun onTabSelected(tab: TabLayout.Tab) {
