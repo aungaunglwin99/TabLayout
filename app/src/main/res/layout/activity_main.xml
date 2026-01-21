@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:title="Discovery"
-        app:titleTextColor="@color/white"
         android:titleTextColor="@android:color/white"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tlMain"
@@ -25,24 +25,25 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:tabIndicatorFullWidth="true">
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:icon="@drawable/plants_leaf_svgrepo_com"
             android:text="PLANTS" />
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:icon="@drawable/paw_svgrepo_com"
             android:text="ANIMALS" />
 
         <com.google.android.material.tabs.TabItem
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:icon="@drawable/planet_svgrepo_com"
             android:text="PLANETS" />
     </com.google.android.material.tabs.TabLayout>
 
@@ -50,9 +51,9 @@
         android:id="@+id/fcList"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/tlMain"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tlMain" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

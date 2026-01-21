@@ -3,6 +3,9 @@ package com.example.tablayout
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tablayout.databinding.ActivityMainBinding
+import com.example.tablayout.fragment.AnimalsFragment
+import com.example.tablayout.fragment.PlanetsFragment
+import com.example.tablayout.fragment.PlantsFragment
 import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
